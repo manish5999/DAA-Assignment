@@ -22,3 +22,7 @@ class Solution {
        }
     }
 }
+q2)912 – Sort an Array
+q3)215 – Kth Largest Element in an Array
+q4)53 – Maximum Subarray
+q5)4 – Median of Two Sorted Arrays
