@@ -1,4 +1,4 @@
-q1)	88 – Merge Sorted Array
+//q1)	88 – Merge Sorted Array
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
        int i = m-1;
@@ -22,7 +22,28 @@ class Solution {
        }
     }
 }
-q2)912 – Sort an Array
-q3)215 – Kth Largest Element in an Array
-q4)53 – Maximum Subarray
-q5)4 – Median of Two Sorted Arrays
+
+//q2)912 – Sort an Array
+//q3)215 – Kth Largest Element in an Array
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        Arrays.sort(nums);  
+        return nums[nums.length - k];
+    }
+}
+//q4)53 – Maximum Subarray
+class Solution {
+    public int maxSubArray(int[] nums) {
+
+        int maxSum = nums[0];
+        int currSum= nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            currSum=Math.max(nums[i],currSum+nums[i]);
+            maxSum=Math.max(maxSum,currSum);
+        }
+
+        return maxSum;
+    }
+}
+//q5)4 – Median of Two Sorted Arrays
